@@ -7,7 +7,7 @@
 * 선택정렬
 > 입력 배열에서 최소값을 선택하여 0번 원소와 자리를 바꾸고, 이후 0번 원소를 제외한 나머지에서 최소값을 선택하여 1번원소와 자리를 바꾼다.
 
-<img width="253" alt="선택정렬" src="https://user-images.githubusercontent.com/51106969/116845928-33a13300-ac22-11eb-8e41-b74c992f92fa.PNG"> <p align="center"><img width="270" alt="선택정렬2" src="https://user-images.githubusercontent.com/51106969/116845932-34d26000-ac22-11eb-9441-30252e929d22.PNG"></p>
+<img width="253" alt="선택정렬" src="https://user-images.githubusercontent.com/51106969/116845928-33a13300-ac22-11eb-8e41-b74c992f92fa.PNG"><p align="center"><img width="270" alt="선택정렬2" src="https://user-images.githubusercontent.com/51106969/116845932-34d26000-ac22-11eb-9441-30252e929d22.PNG"></p>
 
 
 * 삽입정렬
