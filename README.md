@@ -12,10 +12,12 @@
 
 * 삽입정렬
 > 배열을 정렬 부분과 정렬 되지 않은 부분으로 나누고, 정렬 되지 않은 부분의 가장 왼쪽 원소를 정렬 부분의 적절한 위치에 삽입하여 정렬한다.
+
 ![image](https://user-images.githubusercontent.com/51106969/116845483-eff9f980-ac20-11eb-88e7-344c314bd1cb.png)
 
 * 셸정렬
 > 버블정렬, 삽입정렬의 단점(작은 숫자가 배열의 앞부분으로 매우 느리게 동작하며 모든 숫자들이 한칸 씩 이동해야한다는 점)을 보완하기 위해 삽입 정렬을 이용하여 뒷부분의 작은 숫자들을 빠르게 이동시킨다. 동시에 앞부분의 큰 숫자는 뒷부분으로 이동시키고 마지막에는 삽입정렬을 수행한다.
+
 ![image](https://user-images.githubusercontent.com/51106969/116846174-b6c28900-ac22-11eb-8ed0-a600e629bb95.png)
 ![image](https://user-images.githubusercontent.com/51106969/116846210-c4780e80-ac22-11eb-9816-2ef63dff223d.png)
 ![image](https://user-images.githubusercontent.com/51106969/116846276-e70a2780-ac22-11eb-8e01-404dae687387.png)
