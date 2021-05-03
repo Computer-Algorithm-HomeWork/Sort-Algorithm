@@ -6,8 +6,8 @@
 #### 1. 선택/삽입/쉘 정렬이란?
 * 선택정렬
 > 입력 배열에서 최소값을 선택하여 0번 원소와 자리를 바꾸고, 이후 0번 원소를 제외한 나머지에서 최소값을 선택하여 1번원소와 자리를 바꾼다.
-<img width="253" alt="선택정렬" src="https://user-images.githubusercontent.com/51106969/116845928-33a13300-ac22-11eb-8e41-b74c992f92fa.PNG">{: width="100" height="100"}
-<center><img width="270" alt="선택정렬2" src="https://user-images.githubusercontent.com/51106969/116845932-34d26000-ac22-11eb-9441-30252e929d22.PNG">{: width="100" height="100"}</center>
+<img width="253" alt="선택정렬" src="https://user-images.githubusercontent.com/51106969/116845928-33a13300-ac22-11eb-8e41-b74c992f92fa.PNG">
+<center><img width="270" alt="선택정렬2" src="https://user-images.githubusercontent.com/51106969/116845932-34d26000-ac22-11eb-9441-30252e929d22.PNG">
 
 
 * 삽입정렬
@@ -125,6 +125,7 @@ int [] x = arr.clone();
 #### 4. 셸정렬의 효율성 높이기
 셸정렬은 가장 빠르다고 알려진 퀵정렬 보다 성능이 우수하다. 퀵정렬은 데이터의 개수가 많아지면 성능이 떨어지는 반면 셸정렬은 그렇지 않기 때문이다.
 셸정렬의 효율성을 더 높이기 위해서는 gap(간격)을 잘 설정해야 한다. 이에 관한 연구로 수열(보조 증분 수열)을 이용한 방법이 있다.
+
 ![image](https://user-images.githubusercontent.com/51106969/116888075-024a5680-ac66-11eb-9392-b9235afd5241.png)
 > 보조 증분 수열이란 1을 향해 감소하는 자연수열이다.
 
