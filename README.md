@@ -3,17 +3,24 @@
 ## 201701643 고희수
 ----------------------
 
-#### 1. 선택/삽입/쉘 정렬이란?
+#### 1. 버블/선택/삽입/쉘 정렬이란?
+
+* 버블정렬
+> 이웃하는 숫자를 비교하여 더 작은 수를 앞쪽으로 이동시키는 과정을 반복하여 정렬하는 알고리즘이다.오름차순으로 정렬한다면 작은 수는 배열의 앞부분으로 이동하며 이 과정에서 작은 수가 마치 거품처럼(배열을 상하로 정렬) 위로 올라가는 것을 연상케 한다.
+![image](https://user-images.githubusercontent.com/51106969/116960519-91de1c80-acdb-11eb-8247-ee8fc5eab143.png)
+
+
+
 * 선택정렬
 > 입력 배열에서 최소값을 선택하여 0번 원소와 자리를 바꾸고, 이후 0번 원소를 제외한 나머지에서 최소값을 선택하여 1번원소와 자리를 바꾼다.
-
-<img width="253" alt="선택정렬" src="https://user-images.githubusercontent.com/51106969/116845928-33a13300-ac22-11eb-8e41-b74c992f92fa.PNG"> <img width="270" alt="선택정렬2" src="https://user-images.githubusercontent.com/51106969/116845932-34d26000-ac22-11eb-9441-30252e929d22.PNG">
+<img width="253" alt="선택정렬" src="https://user-images.githubusercontent.com/51106969/116845928-33a13300-ac22-11eb-8e41-b74c992f92fa.PNG">
+<center><img width="270" alt="선택정렬2" src="https://user-images.githubusercontent.com/51106969/116845932-34d26000-ac22-11eb-9441-30252e929d22.PNG">
 
 
 * 삽입정렬
 > 배열을 정렬 부분과 정렬 되지 않은 부분으로 나누고, 정렬 되지 않은 부분의 가장 왼쪽 원소를 정렬 부분의 적절한 위치에 삽입하여 정렬한다.
 
-![image](https://user-images.githubusercontent.com/51106969/116845483-eff9f980-ac20-11eb-88e7-344c314bd1cb.png)
+![삽입정렬](https://user-images.githubusercontent.com/51106969/116890480-a0d7b700-ac68-11eb-91be-8462b72f3781.png)
 
 * 셸정렬
 > 버블정렬, 삽입정렬의 단점(작은 숫자가 배열의 앞부분으로 매우 느리게 동작하며 모든 숫자들이 한칸 씩 이동해야한다는 점)을 보완하기 위해 삽입 정렬을 이용하여 뒷부분의 작은 숫자들을 빠르게 이동시킨다. 동시에 앞부분의 큰 숫자는 뒷부분으로 이동시키고 마지막에는 삽입정렬을 수행한다.
