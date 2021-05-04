@@ -69,21 +69,6 @@
 ```
 > 시간 측정을 위해 nanoTime 함수를 이용
 
-```java
-        for (int j=0; j<arr.length;j++){
-            arr[j] = r.nextInt(10000);
-        }
-            for (int i=0; i< arr.length;i++){ // reverse
-                for (int k = i; k<arr.length; k++){
-                    if (arr[k] > arr[i]){
-                    int temp = arr[i];
-                    arr[i] = arr[k];
-                    arr[k] = temp;
-                }
-            }
-        }
-```
-> 배열 역순 입력 (reverse)
 
 * BubbleSort
 ```java
