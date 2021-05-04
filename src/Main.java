@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         long beforeTime = System.nanoTime();
 
-        int [] arr = new int [60000];
+        int [] arr = new int [120000];
 
 
         Random r = new Random(System.nanoTime());
@@ -15,15 +15,15 @@ public class Main {
             arr[j] = r.nextInt(10000);
         }
 
-        //for (int i=0; i< arr.length;i++){ // reverse
-        //    for (int k = i; k<arr.length; k++){
-        //        if (arr[k] > arr[i]){
-        //            int temp = arr[i];
-        //            arr[i] = arr[k];
-        //            arr[k] = temp;
-        //        }
-        //    }
-        //}
+        for (int i=0; i< arr.length;i++){
+           for (int k = i; k<arr.length; k++){
+                if (arr[k] < arr[i]){ // > reverse
+                   int temp = arr[i];
+                    arr[i] = arr[k];
+                   arr[k] = temp;
+               }
+           }
+        }
 
 
         AwesomeSort b = new ShellSort(); // (bubble,selection,insertion,shell)Sort 중 선택
