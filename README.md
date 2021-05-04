@@ -32,8 +32,18 @@
 #### 2. 소스코드
 * Main
 ```java
-        for (int i =0; i< arr.length; i++){
-            arr[i] = Integer.parseInt(scanner.next());
+        int [] arr = new int [120000];
+        for (int j=0; j<arr.length;j++){
+            arr[j] = r.nextInt(10000);
+        }
+        for (int i=0; i< arr.length;i++){
+           for (int k = i; k<arr.length; k++){
+                if (arr[k] < arr[i]){         // > : reverse
+                   int temp = arr[i];
+                    arr[i] = arr[k];
+                   arr[k] = temp;
+               }
+           }
         }
         AwesomeSort b = new SelectionSort(); 
         // (bubble,selection,insertion,shell)Sort 중 선택
@@ -49,6 +59,7 @@
 ```
 
 ``` java
+        Random r = new Random(System.nanoTime());
         long beforeTime = System.nanoTime();
 ...
         long afterTime = System.nanoTime();
@@ -73,6 +84,23 @@
         }
 ```
 > 배열 역순 입력 (reverse)
+
+* BubbleSort
+```java
+        int[] x = arr.clone();
+        int n = x.length;
+
+        for (int i=0; i<n; i++){
+            for (int j=0; j<n-1; j++){
+                if (x[j]>x[j+1]){
+                    int temp = x[j];
+                    x[j] = x[j+1];
+                    x[j+1] = temp;
+                }
+            }
+        }
+        return x;
+```
 
 * SelectionSort
 ```java
@@ -124,11 +152,12 @@ int [] x = arr.clone();
 ```
 -----------------------
 #### 3. 결과분석
-![image](https://user-images.githubusercontent.com/51106969/116883697-dbd5ec80-ac60-11eb-971f-6256b3754771.png)
+![image](https://user-images.githubusercontent.com/51106969/116964698-200bd000-ace7-11eb-8c73-e58e2fac0e88.png)
 > int [] arr = new int [?] 를 통해 입력의 개수를 달리하여 코드 실행 후 표를 작성하였다.
 
-> 위 표를 통해 정렬되어 있는 입력,reverse 입력 (data : 120000)에 대해서 선택정렬이 가장 느리다는 것을 확인할 수 있으며 삽입정렬과 셸정렬은 reverse 입력에 대해서도 비교적 좋은 성능을 보여주고 있다는 것을 알 수 있다.
-> 셸정렬은 삽입정렬보다 조금 빠른 속도를 가지고 있다.
+> 데이터 입력이 많지 않은 경우에서는 네개의 정렬 모두 수행 시간에 큰 차이가 없다.
+> 위 표를 통해 정렬되어 있는 입력,reverse 입력 (data : 120000)에 대해서 버블정렬이 가장 느리다는 것을 확인할 수 있으며 삽입정렬과 셸정렬은 reverse 입력에 대해서도 비교적 좋은 성능을 보여주고 있다는 것을 알 수 있다.
+> 또한 정렬되어있는 입력에 대해서 삽입정렬과 셸정렬이 가장 빠르다는 것을 확인할 수 있다.
 
 -----------------------
 #### 4. 셸정렬의 효율성 높이기
@@ -152,6 +181,9 @@ Robert Sedgewick의 연구
 > 첫번째 줄의 for문에서는 6.21초의 시간이 걸렸으며 두번째 줄의 for문에서는 11.58초의 시간이 걸렸다. 
 
 만약 정렬 문제에 대한 해결책이 필요하고, 시스템 차원에서의 정렬 기능이 제공되지 않는 환경(HW, 임베디드 시스템)이라면 셸정렬을 선택하는 것이 안전하다.
+
+--------------------------
+* 정렬 소개에 관한 내용과 이미지는 컴퓨터 알고리즘 강의자료 6. 정렬 알고리즘 ppt를 참고하였습니다.
 
 
 
